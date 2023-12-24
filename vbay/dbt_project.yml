@@ -36,8 +36,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  northwind:
-    +materialized: table
-    database: analytics
-    +schema: northwind
-
+  my_new_project:
+    # Applies to all files under models/example/
+    example:
+      +materialized: table
